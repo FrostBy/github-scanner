@@ -1,0 +1,26 @@
+type WebHook{
+    url: String,
+    name: String,
+    events: [String]
+}
+
+type Repository {
+    name: String
+    size: Int
+    owner: String
+}
+
+type RepositoryDetails {
+    name: String
+    size: Int
+    owner: String
+    isPrivate: Boolean
+    fileCount: Int
+    contentYML: String
+    activeWebhooks: [WebHook]
+}
+
+type Query {
+    listRepositories(token: String!): [Repository]
+    getRepositoryDetails(token: String!, repoName: String!, userName: String!): RepositoryDetails
+}

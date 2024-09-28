@@ -1,0 +1,30 @@
+{
+  "name": "github-scanner",
+  "version": "1.0.0",
+  "description": "GitHub Scanner",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "graphql",
+    "github",
+    "scanner"
+  ],
+  "author": "Vladislav Romanovsky",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@octokit/rest": "^21.0.2",
+    "graphql": "^16.9.0",
+    "p-limit": "^6.1.0",
+    "winston": "^3.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FrostBy/github-scanner.git"
+  },
+  "homepage": "https://github.com/FrostBy/github-scanner#readme"
+}
